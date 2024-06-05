@@ -9,7 +9,7 @@
   "title": "",
   "v": 209,
   "uiSettings": {
-    "grid": false,
+    "grid": true,
     "gridType": "rectangular",
     "gridWidth": 32,
     "gridHeight": 32,
@@ -17,25 +17,42 @@
     "gridOffsetY": 0,
     "gridColor": 10401023,
     "gridAlpha": 0.8,
-    "snap": false,
-    "zoomFactor": 0.48611111111111127,
-    "windowMask": false
+    "snap": true,
+    "zoomFactor": 0.23435179322407212,
+    "windowMask": true
   },
   "objectsGroups": [],
   "variables": [],
   "instances": [
     {
       "angle": 0,
-      "customSize": true,
-      "depth": 2.2068876080691644,
-      "height": 1023.9958501440925,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
       "layer": "",
       "name": "background",
-      "persistentUuid": "a448f6e1-dab6-4db6-838b-87500e0fb33e",
-      "width": 1440,
+      "persistentUuid": "087e12f1-d382-46fc-b611-eab52fbbcb58",
+      "width": 0,
       "x": 0,
       "y": 0,
       "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 96,
+      "keepRatio": true,
+      "layer": "",
+      "name": "title",
+      "persistentUuid": "5be4952f-6936-46b8-b0d5-9b464c87f384",
+      "width": 960,
+      "x": 448,
+      "y": 96,
+      "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -44,9 +61,20 @@
   "objects": [
     {
       "assetStoreId": "",
-      "height": 32,
+      "height": 1080,
       "name": "background",
-      "texture": "asset\\background.png",
+      "texture": "asset\\main_menu\\background.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 1920,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "title",
+      "texture": "asset\\main_menu\\title.png",
       "type": "TiledSpriteObject::TiledSprite",
       "width": 32,
       "variables": [],
@@ -59,6 +87,9 @@
     "children": [
       {
         "objectName": "background"
+      },
+      {
+        "objectName": "title"
       }
     ]
   },

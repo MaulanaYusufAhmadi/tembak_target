@@ -16,15 +16,15 @@
     "pixelsRounding": false,
     "projectUuid": "d3e8fc08-0f9a-4579-a56b-935f802df5dd",
     "scaleMode": "linear",
-    "sizeOnStartupMode": "adaptWidth",
+    "sizeOnStartupMode": "",
     "templateSlug": "",
     "useExternalSourceFiles": false,
     "version": "1.0.0",
     "name": "Tembak_Target",
     "description": "Game menembak target",
     "author": "",
-    "windowWidth": 1440,
-    "windowHeight": 1024,
+    "windowWidth": 1920,
+    "windowHeight": 1080,
     "latestCompilationDirectory": "",
     "maxFPS": 60,
     "minFPS": 20,
@@ -81,6 +81,33 @@
         "name": "asset\\background.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "asset/title.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "asset\\title.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "asset/main_menu/background.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "asset\\main_menu\\background.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "asset/main_menu/title.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "asset\\main_menu\\title.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -94,7 +121,7 @@
   "layouts": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/untitled-scene"
+      "referenceTo": "/layouts/pilih_kesulitan"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
