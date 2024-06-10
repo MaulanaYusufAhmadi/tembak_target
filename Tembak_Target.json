@@ -330,6 +330,96 @@
         "name": "asset\\pilih_kesulitan\\btn_back_click.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "asset/pilih_kesulitan/bg_kesulitan.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "asset\\pilih_kesulitan\\bg_kesulitan.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "asset/pilih_kesulitan/title_kesulitan.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "asset\\pilih_kesulitan\\title_kesulitan.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "asset/pilih_kesulitan/btn_normal.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "asset\\pilih_kesulitan\\btn_normal.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "asset/pilih_kesulitan/btn_normal_hover.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "asset\\pilih_kesulitan\\btn_normal_hover.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "asset/pilih_kesulitan/btn_normal_click.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "asset\\pilih_kesulitan\\btn_normal_click.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "asset/pilih_kesulitan/btn_hard.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "asset\\pilih_kesulitan\\btn_hard.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "asset/pilih_kesulitan/btn_hard_hover.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "asset\\pilih_kesulitan\\btn_hard_hover.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "asset/pilih_kesulitan/btn_hard_click.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "asset\\pilih_kesulitan\\btn_hard_click.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "asset/pilih_kesulitan/bg_hard_r.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "asset\\pilih_kesulitan\\bg_hard_r.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "asset/pilih_kesulitan/bg_normal_l.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "asset\\pilih_kesulitan\\bg_normal_l.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
