@@ -510,6 +510,150 @@
         "name": "asset\\pilih_kesulitan\\stage2\\stage2_3.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "asset/play/bg_play.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"asset/play/bg_play.png\",\"extension\":\".png\"}",
+        "name": "asset\\play\\bg_play.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "asset/play/crosshair.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "asset\\play\\crosshair.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "asset/play/pistol.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "asset\\play\\pistol.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "asset/play/target.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "asset\\play\\target.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "asset/play/kayu.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "asset\\play\\kayu.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "asset/play/target_zonk.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "asset\\play\\target_zonk.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "asset/play/tiang.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "asset\\play\\tiang.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "asset/play/game_over.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "asset\\play\\game_over.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/asset_play_bg_play.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "asset\\play\\bg_play",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "asset/play/bg_play_ori.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "asset\\play\\bg_play_ori.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "asset/play/bg_base.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "asset\\play\\bg_base.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "asset/play/kayu_bawah.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "asset\\play\\kayu_bawah.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "asset/play/tirai.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "asset\\play\\tirai.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "asset/play/base1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "asset\\play\\base1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "asset/play/base2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "asset\\play\\base2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "asset/play/awan.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "asset\\play\\awan.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -519,7 +663,20 @@
     "folderName": "__ROOT"
   },
   "objectsGroups": [],
-  "variables": [],
+  "variables": [
+    {
+      "folded": true,
+      "name": "HittedTargetXPos",
+      "type": "string",
+      "value": ""
+    },
+    {
+      "folded": true,
+      "name": "RoundStart",
+      "type": "boolean",
+      "value": false
+    }
+  ],
   "layouts": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
@@ -531,11 +688,31 @@
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/untitled-scene"
+      "referenceTo": "/layouts/easy_1"
     }
   ],
   "externalEvents": [],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/starrating"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/objectspawner"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/shakeobject"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/mousepointerlock"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/camerashake"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/buttonstates"
