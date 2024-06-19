@@ -818,6 +818,42 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "asset/pilih_kesulitan/stage3/stage3_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "asset\\pilih_kesulitan\\stage3\\stage3_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "asset/pilih_kesulitan/stage3/stage3_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "asset\\pilih_kesulitan\\stage3\\stage3_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "asset/pilih_kesulitan/stage3/stage3_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "asset\\pilih_kesulitan\\stage3\\stage3_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "asset/pilih_kesulitan/stage3/stage3_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "asset\\pilih_kesulitan\\stage3\\stage3_3.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -826,7 +862,49 @@
   "objectsFolderStructure": {
     "folderName": "__ROOT"
   },
-  "objectsGroups": [],
+  "objectsGroups": [
+    {
+      "name": "StageStar",
+      "objects": [
+        {
+          "name": "level1_star0"
+        },
+        {
+          "name": "level1_star1"
+        },
+        {
+          "name": "level1_star2"
+        },
+        {
+          "name": "level1_star3"
+        },
+        {
+          "name": "level2_star0"
+        },
+        {
+          "name": "level2_star1"
+        },
+        {
+          "name": "level2_star2"
+        },
+        {
+          "name": "level2_star3"
+        },
+        {
+          "name": "level3_star0"
+        },
+        {
+          "name": "level3_star1"
+        },
+        {
+          "name": "level3_star2"
+        },
+        {
+          "name": "level3_star3"
+        }
+      ]
+    }
+  ],
   "variables": [
     {
       "folded": true,
@@ -855,7 +933,7 @@
             },
             {
               "folded": true,
-              "name": "LastScore",
+              "name": "LastStar",
               "type": "number",
               "value": 0
             },
@@ -890,7 +968,6 @@
               ]
             },
             {
-              "folded": true,
               "name": "Target",
               "type": "structure",
               "children": [
@@ -898,18 +975,18 @@
                   "folded": true,
                   "name": "HitScore",
                   "type": "number",
-                  "value": 1
+                  "value": 3
                 },
                 {
                   "folded": true,
                   "name": "MissScore",
                   "type": "number",
-                  "value": -3
+                  "value": 0
                 },
                 {
                   "name": "SpawnSpeedPerSecond",
                   "type": "number",
-                  "value": 1
+                  "value": 0.5
                 },
                 {
                   "name": "XForce",
@@ -921,7 +998,6 @@
             {
               "folded": true,
               "name": "TargetZonk",
-              "persistentUuid": "0f4dcdc5-25cb-4dde-b75f-3ab216ffd898",
               "type": "structure",
               "children": [
                 {
@@ -938,13 +1014,11 @@
                 },
                 {
                   "name": "SpawnSpeedPerSecond",
-                  "persistentUuid": "4e93358c-9132-4dcb-a2bc-96fd70d111b9",
                   "type": "number",
                   "value": 1
                 },
                 {
                   "name": "XForce",
-                  "persistentUuid": "e59a27e5-e3bf-4c7d-9546-50574828b3b5",
                   "type": "number",
                   "value": 500
                 }
@@ -959,8 +1033,6 @@
           ]
         },
         {
-          "folded": true,
-          "persistentUuid": "454241af-69ca-470c-9715-a21dc89fd926",
           "type": "structure",
           "children": [
             {
@@ -971,8 +1043,7 @@
             },
             {
               "folded": true,
-              "name": "LastScore",
-              "persistentUuid": "06a5afc4-2957-4ab0-b72e-85520611deea",
+              "name": "LastStar",
               "type": "number",
               "value": 0
             },
@@ -1038,7 +1109,6 @@
             {
               "folded": true,
               "name": "TargetZonk",
-              "persistentUuid": "0f4dcdc5-25cb-4dde-b75f-3ab216ffd898",
               "type": "structure",
               "children": [
                 {
@@ -1055,13 +1125,11 @@
                 },
                 {
                   "name": "SpawnSpeedPerSecond",
-                  "persistentUuid": "4e93358c-9132-4dcb-a2bc-96fd70d111b9",
                   "type": "number",
                   "value": 1
                 },
                 {
                   "name": "XForce",
-                  "persistentUuid": "e59a27e5-e3bf-4c7d-9546-50574828b3b5",
                   "type": "number",
                   "value": 500
                 }
@@ -1070,9 +1138,95 @@
             {
               "folded": true,
               "name": "TimeLimitInSeconds",
-              "persistentUuid": "6e6eaf44-ecc6-42dd-b479-03c4a2730b25",
               "type": "number",
               "value": 60
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "StageStarFileName",
+      "type": "structure",
+      "children": [
+        {
+          "folded": true,
+          "name": "1",
+          "type": "array",
+          "children": [
+            {
+              "folded": true,
+              "type": "string",
+              "value": "level1_star0"
+            },
+            {
+              "folded": true,
+              "type": "string",
+              "value": "level1_star1"
+            },
+            {
+              "folded": true,
+              "type": "string",
+              "value": "level3_star2"
+            },
+            {
+              "folded": true,
+              "type": "string",
+              "value": "level2_star3"
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "name": "2",
+          "type": "array",
+          "children": [
+            {
+              "folded": true,
+              "type": "string",
+              "value": "level2_star0"
+            },
+            {
+              "folded": true,
+              "type": "string",
+              "value": "level2_star1"
+            },
+            {
+              "folded": true,
+              "type": "string",
+              "value": "level2_star3"
+            },
+            {
+              "folded": true,
+              "type": "string",
+              "value": "level2_star3"
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "name": "3",
+          "type": "array",
+          "children": [
+            {
+              "folded": true,
+              "type": "string",
+              "value": "level3_star1"
+            },
+            {
+              "folded": true,
+              "type": "string",
+              "value": "level3_star3"
+            },
+            {
+              "folded": true,
+              "type": "string",
+              "value": "level3_star2"
+            },
+            {
+              "folded": true,
+              "type": "string",
+              "value": "level3_star0"
             }
           ]
         }
@@ -1101,6 +1255,10 @@
   ],
   "externalEvents": [],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/extendedvariables"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/starrating"
