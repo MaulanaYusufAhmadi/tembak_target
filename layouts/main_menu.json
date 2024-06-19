@@ -5,7 +5,7 @@
   "name": "Main_menu",
   "r": 209,
   "standardSortMethod": true,
-  "stopSoundsOnStartup": true,
+  "stopSoundsOnStartup": false,
   "title": "",
   "v": 209,
   "uiSettings": {
@@ -1147,6 +1147,19 @@
           "parameters": [
             "marker_setting"
           ]
+        },
+        {
+          "type": {
+            "value": "PlayMusicCanal"
+          },
+          "parameters": [
+            "",
+            "asset\\audio\\bgm\\Run the brave .mp3",
+            "0",
+            "yes",
+            "50",
+            ""
+          ]
         }
       ]
     },
@@ -1177,6 +1190,18 @@
             "\"easeInOutQuad\"",
             "0.5"
           ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "asset\\audio\\sfx\\button.mp3",
+            "",
+            "",
+            ""
+          ]
         }
       ]
     },
@@ -1206,6 +1231,18 @@
             "",
             "\"easeInOutQuad\"",
             "0.5"
+          ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "asset\\audio\\sfx\\button.mp3",
+            "",
+            "",
+            ""
           ]
         }
       ]
@@ -1257,13 +1294,20 @@
             "\"Pilih_kesulitan\"",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "asset\\audio\\sfx\\button.mp3",
+            "",
+            "",
+            ""
+          ]
         }
       ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": []
     }
   ],
   "layers": [

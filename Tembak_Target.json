@@ -718,6 +718,106 @@
         "name": "asset\\play\\go.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "file": "asset/audio/bgm/Run the brave .mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "asset\\audio\\bgm\\Run the brave .mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "asset/audio/sfx/button.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "asset\\audio\\sfx\\button.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "asset/audio/bgm/Can't espace with us .mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "asset\\audio\\bgm\\Can't espace with us .mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "asset/audio/bgm/Space intruder.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "asset\\audio\\bgm\\Space intruder.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "asset/audio/sfx/gunshot.MP3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "asset\\audio\\sfx\\gunshot.MP3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "asset/audio/sfx/minus point.MP3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "asset\\audio\\sfx\\minus point.MP3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "asset/audio/sfx/get point.MP3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "asset\\audio\\sfx\\get point.MP3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "asset/audio/sfx/stage completion.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "asset\\audio\\sfx\\stage completion.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "asset/audio/sfx/game over.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "asset\\audio\\sfx\\game over.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "asset/audio/sfx/countdown.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "asset\\audio\\sfx\\countdown.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []

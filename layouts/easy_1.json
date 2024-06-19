@@ -2537,6 +2537,18 @@
       "actions": [
         {
           "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "asset\\audio\\sfx\\countdown.mp3",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
             "value": "Create"
           },
           "parameters": [
@@ -2561,6 +2573,18 @@
           },
           "parameters": [
             "Ready",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "asset\\audio\\sfx\\countdown.mp3",
+            "",
+            "",
             ""
           ]
         },
@@ -2591,6 +2615,18 @@
           "parameters": [
             "Go",
             ""
+          ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "asset\\audio\\sfx\\countdown.mp3",
+            "",
+            "",
+            "2"
           ]
         }
       ]
@@ -2794,6 +2830,18 @@
             "",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "asset\\audio\\sfx\\gunshot.MP3",
+            "",
+            "",
+            ""
+          ]
         }
       ],
       "events": [
@@ -2896,6 +2944,18 @@
                         "+",
                         "GlobalVariable(StageSetting[Variable(ActiveStageNumber)].TargetZonk.HitScore)"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "asset\\audio\\sfx\\minus point.MP3",
+                        "",
+                        "",
+                        ""
+                      ]
                     }
                   ]
                 },
@@ -2922,6 +2982,18 @@
                         "Score",
                         "+",
                         "GlobalVariable(StageSetting[Variable(ActiveStageNumber)].Target.HitScore)"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "asset\\audio\\sfx\\get point.MP3",
+                        "",
+                        "",
+                        ""
                       ]
                     }
                   ]
@@ -3107,6 +3179,19 @@
             "",
             "\"GameTimer\""
           ]
+        },
+        {
+          "type": {
+            "value": "PlayMusicCanal"
+          },
+          "parameters": [
+            "",
+            "asset\\audio\\bgm\\Space intruder.mp3",
+            "1",
+            "yes",
+            "50",
+            ""
+          ]
         }
       ]
     },
@@ -3185,6 +3270,18 @@
         },
         {
           "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "asset\\audio\\sfx\\game over.mp3",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
             "value": "Create"
           },
           "parameters": [
@@ -3235,6 +3332,15 @@
           "parameters": [
             "",
             ""
+          ]
+        },
+        {
+          "type": {
+            "value": "StopMusicCanal"
+          },
+          "parameters": [
+            "",
+            "1"
           ]
         }
       ],
