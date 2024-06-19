@@ -654,6 +654,70 @@
         "name": "asset\\play\\awan.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "file": "assets/FiraSans-Bold.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets\\FiraSans-Bold.ttf",
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Blue Button_Hovered.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Blue Button_Hovered.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/1ffd07cb739df2a909155dd3057f6def46b833ced6ef1a09527b6ea59e88e464_Blue Button_Hovered.png",
+          "name": "Blue Button_Hovered.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Blue Button_Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Blue Button_Idle.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/eeac55458b66fb84f756b38085fbf7d1e079c39363c942abd35ea9d0939465ce_Blue Button_Idle.png",
+          "name": "Blue Button_Idle.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Blue Button_Pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Blue Button_Pressed.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/f0ede8843d544f6e84bc09299a8aabffbce558966f25af98f7b47ab1648217ce_Blue Button_Pressed.png",
+          "name": "Blue Button_Pressed.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "asset/play/ready.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "asset\\play\\ready.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "asset/play/go.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "asset\\play\\go.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -675,6 +739,250 @@
       "name": "RoundStart",
       "type": "boolean",
       "value": false
+    },
+    {
+      "name": "StageSetting",
+      "type": "array",
+      "children": [
+        {
+          "type": "structure",
+          "children": [
+            {
+              "folded": true,
+              "name": "Difficulty",
+              "type": "string",
+              "value": "Normal"
+            },
+            {
+              "folded": true,
+              "name": "LastScore",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "folded": true,
+              "name": "Stage",
+              "type": "number",
+              "value": 1
+            },
+            {
+              "folded": true,
+              "name": "Star",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "1",
+                  "type": "string",
+                  "value": "10"
+                },
+                {
+                  "folded": true,
+                  "name": "2",
+                  "type": "string",
+                  "value": "30"
+                },
+                {
+                  "folded": true,
+                  "name": "3",
+                  "type": "string",
+                  "value": "50"
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "Target",
+              "type": "structure",
+              "children": [
+                {
+                  "folded": true,
+                  "name": "HitScore",
+                  "type": "number",
+                  "value": 1
+                },
+                {
+                  "folded": true,
+                  "name": "MissScore",
+                  "type": "number",
+                  "value": -3
+                },
+                {
+                  "name": "SpawnSpeedPerSecond",
+                  "type": "number",
+                  "value": 1
+                },
+                {
+                  "name": "XForce",
+                  "type": "number",
+                  "value": 500
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "TargetZonk",
+              "persistentUuid": "0f4dcdc5-25cb-4dde-b75f-3ab216ffd898",
+              "type": "structure",
+              "children": [
+                {
+                  "folded": true,
+                  "name": "HitScore",
+                  "type": "number",
+                  "value": -5
+                },
+                {
+                  "folded": true,
+                  "name": "MissScore",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "name": "SpawnSpeedPerSecond",
+                  "persistentUuid": "4e93358c-9132-4dcb-a2bc-96fd70d111b9",
+                  "type": "number",
+                  "value": 1
+                },
+                {
+                  "name": "XForce",
+                  "persistentUuid": "e59a27e5-e3bf-4c7d-9546-50574828b3b5",
+                  "type": "number",
+                  "value": 500
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "TimeLimitInSeconds",
+              "type": "number",
+              "value": 10
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "persistentUuid": "454241af-69ca-470c-9715-a21dc89fd926",
+          "type": "structure",
+          "children": [
+            {
+              "folded": true,
+              "name": "Difficulty",
+              "type": "string",
+              "value": "Normal"
+            },
+            {
+              "folded": true,
+              "name": "LastScore",
+              "persistentUuid": "06a5afc4-2957-4ab0-b72e-85520611deea",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "folded": true,
+              "name": "Stage",
+              "type": "number",
+              "value": 2
+            },
+            {
+              "folded": true,
+              "name": "Star",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "1",
+                  "type": "string",
+                  "value": "15"
+                },
+                {
+                  "folded": true,
+                  "name": "2",
+                  "type": "string",
+                  "value": "35"
+                },
+                {
+                  "folded": true,
+                  "name": "3",
+                  "type": "string",
+                  "value": "55"
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "Target",
+              "type": "structure",
+              "children": [
+                {
+                  "folded": true,
+                  "name": "HitScore",
+                  "type": "number",
+                  "value": 5
+                },
+                {
+                  "folded": true,
+                  "name": "MissScore",
+                  "type": "number",
+                  "value": -20
+                },
+                {
+                  "name": "SpawnSpeedPerSecond",
+                  "type": "number",
+                  "value": 1
+                },
+                {
+                  "name": "XForce",
+                  "type": "number",
+                  "value": 500
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "TargetZonk",
+              "persistentUuid": "0f4dcdc5-25cb-4dde-b75f-3ab216ffd898",
+              "type": "structure",
+              "children": [
+                {
+                  "folded": true,
+                  "name": "HitScore",
+                  "type": "number",
+                  "value": -10
+                },
+                {
+                  "folded": true,
+                  "name": "MissScore",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "name": "SpawnSpeedPerSecond",
+                  "persistentUuid": "4e93358c-9132-4dcb-a2bc-96fd70d111b9",
+                  "type": "number",
+                  "value": 1
+                },
+                {
+                  "name": "XForce",
+                  "persistentUuid": "e59a27e5-e3bf-4c7d-9546-50574828b3b5",
+                  "type": "number",
+                  "value": 500
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "TimeLimitInSeconds",
+              "persistentUuid": "6e6eaf44-ecc6-42dd-b479-03c4a2730b25",
+              "type": "number",
+              "value": 60
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "folded": true,
+      "name": "ActiveStage",
+      "type": "number",
+      "value": 0
     }
   ],
   "layouts": [

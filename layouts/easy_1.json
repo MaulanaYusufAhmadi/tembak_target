@@ -40,6 +40,12 @@
       "name": "HittedTargetXPos",
       "type": "number",
       "value": 0
+    },
+    {
+      "folded": true,
+      "name": "HittedTargetYPos",
+      "type": "number",
+      "value": 0
     }
   ],
   "instances": [
@@ -144,7 +150,7 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 750,
+      "height": 616,
       "layer": "city",
       "name": "TargetSpawn",
       "persistentUuid": "09befbf8-0ff4-488c-a882-e3fb0d8841c6",
@@ -159,8 +165,8 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 0.6944444444444444,
-      "height": 750,
+      "depth": 1,
+      "height": 618,
       "layer": "city",
       "name": "TargetZonkSpawn",
       "persistentUuid": "68a15565-d290-402e-b2e9-bfc6ff96e42a",
@@ -246,8 +252,8 @@
       "name": "base1",
       "persistentUuid": "5675c9eb-cec5-4f84-ac7e-66706ec9840f",
       "width": 0,
-      "x": -378,
-      "y": 707,
+      "x": -355,
+      "y": 713,
       "zOrder": 19,
       "numberProperties": [],
       "stringProperties": [],
@@ -313,6 +319,86 @@
       "x": 1364,
       "y": 218,
       "zOrder": 21,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "level1_star1",
+      "persistentUuid": "8a9e85a3-b097-4c45-83af-f4dce492e0d7",
+      "width": 0,
+      "x": 806,
+      "y": 458,
+      "zOrder": 23,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "NextLevel",
+      "persistentUuid": "874c1daa-8227-473a-b8ff-e5686a4e8829",
+      "width": 0,
+      "x": 1111,
+      "y": 646,
+      "zOrder": 24,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "MainMenu",
+      "persistentUuid": "1d3d567b-de09-46af-b010-b765869d5f99",
+      "width": 0,
+      "x": 527,
+      "y": 664,
+      "zOrder": 26,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "Text2",
+      "persistentUuid": "6b0de24a-6344-4a91-95bf-bc8633e99d2b",
+      "width": 0,
+      "x": 1249,
+      "y": 32,
+      "zOrder": 27,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "Text3",
+      "persistentUuid": "c403ec1b-99b2-47c0-85bf-61c75c904eb5",
+      "width": 0,
+      "x": 1251,
+      "y": 136,
+      "zOrder": 28,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1238,7 +1324,7 @@
         {
           "name": "ObjectSpawner",
           "type": "ObjectSpawner::ObjectSpawner",
-          "SpawnPeriod": 0.5,
+          "SpawnPeriod": 1,
           "OffsetX": 0,
           "OffsetY": 0,
           "JustSpawnedAnObject": false,
@@ -1735,6 +1821,516 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "level1_star0",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "asset\\pilih_kesulitan\\stage1\\stage1_0.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 197,
+                        "y": 0
+                      },
+                      {
+                        "x": 197,
+                        "y": 236
+                      },
+                      {
+                        "x": 0,
+                        "y": 236
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Go",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "asset\\play\\go.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 216,
+                        "y": 0
+                      },
+                      {
+                        "x": 216,
+                        "y": 128
+                      },
+                      {
+                        "x": 0,
+                        "y": 128
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "NextLevel",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Next Level !",
+      "font": "assets\\FiraSans-Bold.ttf",
+      "textAlignment": "center",
+      "characterSize": 60,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 6,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Next Level !",
+        "font": "assets\\FiraSans-Bold.ttf",
+        "textAlignment": "center",
+        "characterSize": 60,
+        "color": "255;0;0"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "MainMenu",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Main Menu",
+      "font": "assets\\FiraSans-Bold.ttf",
+      "textAlignment": "center",
+      "characterSize": 60,
+      "color": {
+        "b": 255,
+        "g": 15,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 6,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Main Menu",
+        "font": "assets\\FiraSans-Bold.ttf",
+        "textAlignment": "center",
+        "characterSize": 60,
+        "color": "0;15;255"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "Retry",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Retry ?",
+      "font": "assets\\FiraSans-Bold.ttf",
+      "textAlignment": "center",
+      "characterSize": 60,
+      "color": {
+        "b": 68,
+        "g": 255,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 6,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Retry ?",
+        "font": "assets\\FiraSans-Bold.ttf",
+        "textAlignment": "center",
+        "characterSize": 60,
+        "color": "0;255;68"
+      }
+    },
+    {
+      "assetStoreId": "90d94b6e3a23c34948e59eaaef4679740f8ab588696d59b21e0c0c2ef106b94d",
+      "name": "RetryButton",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 16,
+        "RightPadding": 16,
+        "PressedLabelOffsetY": 10,
+        "BottomPadding": 32,
+        "TopPadding": 16,
+        "HoveredFadeOutDuration": 0.25
+      },
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 32,
+          "height": 106,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Blue Button_Hovered.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 256
+        },
+        "Idle": {
+          "bottomMargin": 32,
+          "height": 106,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Blue Button_Idle.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 256
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "Retry",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 60,
+          "color": {
+            "b": 99,
+            "g": 69,
+            "r": 28
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Retry",
+            "font": "",
+            "textAlignment": "center",
+            "characterSize": 60,
+            "color": "28;69;99"
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 16,
+          "height": 106,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Blue Button_Pressed.png",
+          "tiled": true,
+          "topMargin": 32,
+          "width": 256
+        }
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Ready",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "asset\\play\\ready.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 448,
+                        "y": 0
+                      },
+                      {
+                        "x": 448,
+                        "y": 128
+                      },
+                      {
+                        "x": 0,
+                        "y": 128
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "90d94b6e3a23c34948e59eaaef4679740f8ab588696d59b21e0c0c2ef106b94d",
+      "name": "NextLevelButton",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 16,
+        "RightPadding": 16,
+        "PressedLabelOffsetY": 10,
+        "BottomPadding": 32,
+        "TopPadding": 16,
+        "HoveredFadeOutDuration": 0.25
+      },
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 32,
+          "height": 106,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Blue Button_Hovered.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 256
+        },
+        "Idle": {
+          "bottomMargin": 32,
+          "height": 106,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Blue Button_Idle.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 256
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "Next Level",
+          "font": "asset\\Germania_One\\GermaniaOne-Regular.ttf",
+          "textAlignment": "center",
+          "characterSize": 60,
+          "color": {
+            "b": 27,
+            "g": 2,
+            "r": 208
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Next Level",
+            "font": "asset\\Germania_One\\GermaniaOne-Regular.ttf",
+            "textAlignment": "center",
+            "characterSize": 60,
+            "color": "208;2;27"
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 16,
+          "height": 106,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Blue Button_Pressed.png",
+          "tiled": true,
+          "topMargin": 32,
+          "width": 256
+        }
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "Text3",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Text",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 50,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Text",
+        "font": "",
+        "textAlignment": "left",
+        "characterSize": 50,
+        "color": "0;0;0"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -1757,6 +2353,9 @@
       },
       {
         "objectName": "Text2"
+      },
+      {
+        "objectName": "Ready"
       },
       {
         "objectName": "TimeLimit"
@@ -1808,10 +2407,46 @@
       },
       {
         "objectName": "awan"
+      },
+      {
+        "objectName": "level1_star0"
+      },
+      {
+        "objectName": "Go"
+      },
+      {
+        "objectName": "NextLevel"
+      },
+      {
+        "objectName": "MainMenu"
+      },
+      {
+        "objectName": "Retry"
+      },
+      {
+        "objectName": "RetryButton"
+      },
+      {
+        "objectName": "NextLevelButton"
+      },
+      {
+        "objectName": "Text3"
       }
     ]
   },
   "events": [
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Variable & UI"
+    },
     {
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
@@ -1833,51 +2468,44 @@
             "RoundStart",
             "True"
           ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": [
+        },
         {
           "type": {
-            "value": "MettreY"
+            "value": "MousePointerLock::RequestPointerLock"
           },
           "parameters": [
-            "Crosshair",
-            "=",
-            "CursorY()"
+            "",
+            ""
           ]
         },
         {
           "type": {
-            "value": "MettreX"
+            "value": "ModVarScene"
           },
           "parameters": [
-            "Crosshair",
+            "ActiveStageNumber",
             "=",
-            "CursorX()"
+            "GlobalVariable(ActiveStage)"
           ]
         },
         {
           "type": {
-            "value": "MettreY"
+            "value": "ModVarScene"
           },
           "parameters": [
-            "Pistol",
+            "CurrentStageTimeLimit",
             "=",
-            "CursorY() + 700 - (0.7 * CursorY())"
+            "GlobalVariable(StageSetting[Variable(ActiveStageNumber)].TimeLimitInSeconds)"
           ]
         },
         {
           "type": {
-            "value": "MettreX"
+            "value": "ModVarScene"
           },
           "parameters": [
-            "Pistol",
+            "Score",
             "=",
-            "CursorX() + 500 - (0.3 * CursorX())"
+            "0"
           ]
         }
       ]
@@ -1892,24 +2520,20 @@
         "textG": 0,
         "textR": 0
       },
-      "comment": "T"
+      "comment": "Ready Text"
     },
     {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
-      "disabled": true,
-      "name": "Target",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
-      "events": [],
-      "parameters": []
-    },
-    {
-      "disabled": true,
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
+      "conditions": [
+        {
+          "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
       "actions": [
         {
           "type": {
@@ -1917,9 +2541,26 @@
           },
           "parameters": [
             "",
-            "Target",
-            "Random(KayuSamping.X())",
-            "Random(KayuSamping.Y())",
+            "Ready",
+            "713",
+            "455",
+            "\"UI\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "Ready",
             ""
           ]
         },
@@ -1929,44 +2570,87 @@
           },
           "parameters": [
             "",
-            "TargetZonk",
-            "Random(KayuSamping.X())",
-            "Random(KayuSamping.Y())",
+            "Go",
+            "800\n",
+            "455",
+            "\"UI\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "Go",
             ""
-          ]
-        },
-        {
-          "type": {
-            "value": "AddForceXY"
-          },
-          "parameters": [
-            "Target",
-            "10",
-            "0",
-            "1"
-          ]
-        },
-        {
-          "type": {
-            "value": "AddForceXY"
-          },
-          "parameters": [
-            "TargetZonk",
-            "10",
-            "0",
-            "1"
-          ]
-        },
-        {
-          "type": {
-            "value": "ResetObjectTimer"
-          },
-          "parameters": [
-            "Target",
-            "\"target\""
           ]
         }
       ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "MettreX"
+          },
+          "parameters": [
+            "Crosshair",
+            "+",
+            "MousePointerLock::MovementX()"
+          ]
+        },
+        {
+          "type": {
+            "value": "MettreY"
+          },
+          "parameters": [
+            "Crosshair",
+            "+",
+            "MousePointerLock::MovementY()"
+          ]
+        },
+        {
+          "type": {
+            "value": "MettreX"
+          },
+          "parameters": [
+            "Pistol",
+            "=",
+            "Crosshair.X()+ 500 - (0.3 * Crosshair.X())"
+          ]
+        },
+        {
+          "type": {
+            "value": "MettreY"
+          },
+          "parameters": [
+            "Pistol",
+            "=",
+            "Crosshair.Y()+ 700 - (0.7 * Crosshair.Y())"
+          ]
+        }
+      ]
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Target",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [],
+      "parameters": []
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
@@ -2010,7 +2694,7 @@
           },
           "parameters": [
             "TargetZonk",
-            "900",
+            "GlobalVariable(StageSetting[Variable(ActiveStageNumber)].TargetZonk.XForce)",
             "0",
             "0"
           ]
@@ -2021,7 +2705,7 @@
           },
           "parameters": [
             "Target",
-            "900\n",
+            "GlobalVariable(StageSetting[Variable(ActiveStageNumber)].Target.XForce)",
             "0",
             "0"
           ]
@@ -2033,7 +2717,18 @@
           "parameters": [
             "TargetZonkSpawn",
             "ObjectSpawner",
-            "RandomWithStep(3, 15, 3)",
+            "GlobalVariable(StageSetting[Variable(ActiveStageNumber)].TargetZonk.SpawnSpeedPerSecond)",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ObjectSpawner::ObjectSpawner::SetSpawnPeriod"
+          },
+          "parameters": [
+            "TargetSpawn",
+            "ObjectSpawner",
+            "GlobalVariable(StageSetting[Variable(ActiveStageNumber)].Target.SpawnSpeedPerSecond)",
             ""
           ]
         }
@@ -2091,10 +2786,10 @@
             "Crosshair",
             "ShakeObject_PositionAngleScale",
             "0.2",
-            "2",
-            "-7",
+            "5",
+            "-10",
             "0",
-            "40",
+            "80",
             "0.1",
             "",
             ""
@@ -2111,12 +2806,12 @@
               },
               "parameters": [
                 "Targets",
-                "Crosshair.X()",
-                "Crosshair.Y()",
+                "Crosshair.CenterX()",
+                "Crosshair.CenterY()",
                 "0",
                 "1000",
                 "HittedTargetXPos",
-                "",
+                "HittedTargetYPos",
                 ""
               ]
             },
@@ -2139,11 +2834,33 @@
                   "parameters": [
                     "HittedTargetXPos",
                     ">=",
-                    "Targets.X()"
+                    "Targets.CenterX()"
                   ]
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Text2",
+                    "Text",
+                    "=",
+                    "ToString(Target.X())"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Text3",
+                    "Text",
+                    "=",
+                    "VariableString(HittedTargetXPos)"
+                  ]
+                },
                 {
                   "type": {
                     "value": "Delete"
@@ -2163,7 +2880,7 @@
                         "value": "PickedInstancesCount"
                       },
                       "parameters": [
-                        "Target",
+                        "TargetZonk",
                         "=",
                         "1"
                       ]
@@ -2172,13 +2889,12 @@
                   "actions": [
                     {
                       "type": {
-                        "value": "ModVarObjet"
+                        "value": "ModVarScene"
                       },
                       "parameters": [
-                        "Text1",
                         "Score",
                         "+",
-                        "1"
+                        "GlobalVariable(StageSetting[Variable(ActiveStageNumber)].TargetZonk.HitScore)"
                       ]
                     }
                   ]
@@ -2191,7 +2907,7 @@
                         "value": "PickedInstancesCount"
                       },
                       "parameters": [
-                        "TargetZonk",
+                        "Target",
                         "=",
                         "1"
                       ]
@@ -2200,18 +2916,22 @@
                   "actions": [
                     {
                       "type": {
-                        "value": "ModVarObjet"
+                        "value": "ModVarScene"
                       },
                       "parameters": [
-                        "Text1",
                         "Score",
-                        "-",
-                        "5"
+                        "+",
+                        "GlobalVariable(StageSetting[Variable(ActiveStageNumber)].Target.HitScore)"
                       ]
                     }
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": []
             }
           ]
         }
@@ -2229,7 +2949,114 @@
             "Text1",
             "Text",
             "=",
-            "\"Score : \" +Text1.Score"
+            "\"Score : \" + ToString(Variable(Score))"
+          ]
+        }
+      ]
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Miss Target Scanning",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [],
+      "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "PosX"
+          },
+          "parameters": [
+            "Targets",
+            ">",
+            "Background.BoundingBoxRight()"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PickedInstancesCount"
+              },
+              "parameters": [
+                "Target",
+                "=",
+                "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "Score",
+                "+",
+                "GlobalVariable(StageSetting[Variable(ActiveStageNumber)].Target.MissScore)"
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Target",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PickedInstancesCount"
+              },
+              "parameters": [
+                "TargetZonk",
+                "=",
+                "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "Score",
+                "+",
+                "GlobalVariable(StageSetting[Variable(ActiveStageNumber)].TargetZonk.MissScore)"
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "TargetZonk",
+                ""
+              ]
+            }
           ]
         }
       ]
@@ -2266,6 +3093,14 @@
       "actions": [
         {
           "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "2"
+          ]
+        },
+        {
+          "type": {
             "value": "ResetTimer"
           },
           "parameters": [
@@ -2286,7 +3121,7 @@
             "\"\"",
             "\"GameTimer\"",
             "<=",
-            "30"
+            "Variable(CurrentStageTimeLimit)"
           ]
         }
       ],
@@ -2299,12 +3134,13 @@
             "TimeLimit",
             "Text",
             "=",
-            "ToString(floor(((TimerElapsedTime(\"GameTimer\"))-30)*-1))"
+            "ToString(floor(((TimerElapsedTime(\"GameTimer\"))-Variable(CurrentStageTimeLimit))*-1))"
           ]
         }
       ]
     },
     {
+      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -2315,7 +3151,7 @@
             "",
             "\"GameTimer\"",
             ">=",
-            "30"
+            "Variable(CurrentStageTimeLimit)"
           ]
         },
         {
@@ -2342,17 +3178,63 @@
           "parameters": [
             "",
             "GameOver",
-            "950",
-            "500",
-            ""
+            "580",
+            "250",
+            "\"UI\""
           ]
         },
         {
           "type": {
-            "value": "Cache"
+            "value": "Create"
           },
           "parameters": [
-            "Targets"
+            "",
+            "RetryButton",
+            "780",
+            "650",
+            "\"UI\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Create"
+          },
+          "parameters": [
+            "",
+            "MainMenu",
+            "500",
+            "725",
+            "\"UI\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Create"
+          },
+          "parameters": [
+            "",
+            "NextLevelButton",
+            "1050",
+            "725",
+            "\"UI\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "Targets",
+            "Flippable"
+          ]
+        },
+        {
+          "type": {
+            "value": "MousePointerLock::ExitPointerLock"
+          },
+          "parameters": [
+            "",
+            ""
           ]
         }
       ],
@@ -2379,8 +3261,50 @@
                 "Text1",
                 "Score",
                 ">=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "level1_star0",
+                "800",
+                "400",
+                "\"UI\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarObjet"
+              },
+              "parameters": [
+                "Text1",
+                "Score",
+                ">=",
                 "10"
               ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
             }
           ],
           "actions": [
@@ -2391,9 +3315,9 @@
               "parameters": [
                 "",
                 "level1_star1",
-                "850",
-                "450",
-                ""
+                "800",
+                "400",
+                "\"UI\""
               ]
             }
           ]
@@ -2411,6 +3335,12 @@
                 ">=",
                 "30"
               ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
             }
           ],
           "actions": [
@@ -2421,9 +3351,9 @@
               "parameters": [
                 "",
                 "level1_star2",
-                "850",
-                "450",
-                ""
+                "800",
+                "400",
+                "\"UI\""
               ]
             }
           ]
@@ -2441,6 +3371,12 @@
                 ">=",
                 "50\n"
               ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
             }
           ],
           "actions": [
@@ -2451,9 +3387,9 @@
               "parameters": [
                 "",
                 "level1_star3",
-                "850",
-                "450",
-                ""
+                "800",
+                "400",
+                "\"UI\""
               ]
             }
           ]
@@ -2464,6 +3400,137 @@
           "actions": []
         }
       ]
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Click Text",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [],
+      "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+          },
+          "parameters": [
+            "RetryButton",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "PushScene"
+          },
+          "parameters": [
+            "",
+            "\"easy_1\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+          },
+          "parameters": [
+            "NextLevelButton",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "PushScene"
+          },
+          "parameters": [
+            "",
+            "\"easy_1\""
+          ]
+        },
+        {
+          "type": {
+            "value": "ModVarGlobal"
+          },
+          "parameters": [
+            "ActiveStage",
+            "+",
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "MousePointerLock",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [],
+      "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "MouseButtonReleased"
+          },
+          "parameters": [
+            "",
+            "Left"
+          ]
+        },
+        {
+          "type": {
+            "inverted": true,
+            "value": "MousePointerLock::isPointerLocked"
+          },
+          "parameters": [
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "GlobalVariableAsBoolean"
+          },
+          "parameters": [
+            "RoundStart",
+            "True"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "MousePointerLock::RequestPointerLock"
+          },
+          "parameters": [
+            "",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": []
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
