@@ -2819,6 +2819,66 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "TimeUp",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "asset\\play\\time_up.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 573,
+                        "y": 0
+                      },
+                      {
+                        "x": 573,
+                        "y": 134
+                      },
+                      {
+                        "x": 0,
+                        "y": 134
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -2862,6 +2922,9 @@
       },
       {
         "objectName": "GameOver"
+      },
+      {
+        "objectName": "TimeUp"
       },
       {
         "objectName": "level1_star1"
@@ -3813,8 +3876,8 @@
           },
           "parameters": [
             "",
-            "GameOver",
-            "580",
+            "TimeUp",
+            "600",
             "250",
             "\"UI\""
           ]
@@ -3934,7 +3997,73 @@
               },
               "parameters": [
                 "Score",
-                ">=",
+                "<=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "TimeUp",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "GameOver",
+                "580",
+                "250",
+                "\"UI\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Star",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "asset\\audio\\sfx\\game over.mp3",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "Score",
+                ">",
                 "0"
               ]
             },
@@ -3967,6 +4096,18 @@
                 "Star",
                 "=",
                 "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "asset\\audio\\sfx\\stage completion.wav",
+                "",
+                "",
+                ""
               ]
             }
           ]
@@ -4008,6 +4149,18 @@
                 "=",
                 "1"
               ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "asset\\audio\\sfx\\stage completion.wav",
+                "",
+                "",
+                ""
+              ]
             }
           ]
         },
@@ -4048,6 +4201,18 @@
                 "=",
                 "2"
               ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "asset\\audio\\sfx\\stage completion.wav",
+                "",
+                "",
+                ""
+              ]
             }
           ]
         },
@@ -4087,6 +4252,18 @@
                 "Star",
                 "=",
                 "3"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "asset\\audio\\sfx\\stage completion.wav",
+                "",
+                "",
+                ""
               ]
             }
           ]
@@ -4235,11 +4412,6 @@
           ]
         }
       ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": []
     },
     {
       "type": "BuiltinCommonInstructions::Standard",

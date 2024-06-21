@@ -1124,6 +1124,32 @@
       "conditions": [
         {
           "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "MusicPlaying",
+            "True",
+            "="
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "RePlayMusicCanal"
+          },
+          "parameters": [
+            "",
+            "0"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
             "value": "DepartScene"
           },
           "parameters": [
@@ -1146,6 +1172,16 @@
           },
           "parameters": [
             "marker_setting"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "MusicPlaying",
+            "True",
+            ""
           ]
         },
         {
@@ -1311,16 +1347,7 @@
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "SceneJustResumed"
-          },
-          "parameters": [
-            ""
-          ]
-        }
-      ],
+      "conditions": [],
       "actions": []
     }
   ],

@@ -854,6 +854,15 @@
         "name": "asset\\pilih_kesulitan\\stage3\\stage3_3.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "asset/play/time_up.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "asset\\play\\time_up.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -916,13 +925,15 @@
       "folded": true,
       "name": "RoundStart",
       "type": "boolean",
-      "value": false
+      "value": true
     },
     {
+      "folded": true,
       "name": "StageSetting",
       "type": "array",
       "children": [
         {
+          "folded": true,
           "type": "structure",
           "children": [
             {
@@ -930,6 +941,12 @@
               "name": "Difficulty",
               "type": "string",
               "value": "Normal"
+            },
+            {
+              "folded": true,
+              "name": "IsBeat",
+              "type": "boolean",
+              "value": false
             },
             {
               "folded": true,
@@ -968,6 +985,7 @@
               ]
             },
             {
+              "folded": true,
               "name": "Target",
               "type": "structure",
               "children": [
@@ -1033,6 +1051,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "structure",
           "children": [
             {
@@ -1040,6 +1059,12 @@
               "name": "Difficulty",
               "type": "string",
               "value": "Normal"
+            },
+            {
+              "folded": true,
+              "name": "IsBeat",
+              "type": "boolean",
+              "value": false
             },
             {
               "folded": true,
@@ -1142,10 +1167,489 @@
               "value": 60
             }
           ]
+        },
+        {
+          "folded": true,
+          "type": "structure",
+          "children": [
+            {
+              "folded": true,
+              "name": "Difficulty",
+              "type": "string",
+              "value": "Normal"
+            },
+            {
+              "folded": true,
+              "name": "IsBeat",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "folded": true,
+              "name": "LastStar",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "folded": true,
+              "name": "Stage",
+              "type": "number",
+              "value": 3
+            },
+            {
+              "folded": true,
+              "name": "Star",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "1",
+                  "type": "string",
+                  "value": "15"
+                },
+                {
+                  "folded": true,
+                  "name": "2",
+                  "type": "string",
+                  "value": "35"
+                },
+                {
+                  "folded": true,
+                  "name": "3",
+                  "type": "string",
+                  "value": "55"
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "Target",
+              "type": "structure",
+              "children": [
+                {
+                  "folded": true,
+                  "name": "HitScore",
+                  "type": "number",
+                  "value": 5
+                },
+                {
+                  "folded": true,
+                  "name": "MissScore",
+                  "type": "number",
+                  "value": -20
+                },
+                {
+                  "name": "SpawnSpeedPerSecond",
+                  "type": "number",
+                  "value": 1
+                },
+                {
+                  "name": "XForce",
+                  "type": "number",
+                  "value": 500
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "TargetZonk",
+              "type": "structure",
+              "children": [
+                {
+                  "folded": true,
+                  "name": "HitScore",
+                  "type": "number",
+                  "value": -10
+                },
+                {
+                  "folded": true,
+                  "name": "MissScore",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "name": "SpawnSpeedPerSecond",
+                  "type": "number",
+                  "value": 1
+                },
+                {
+                  "name": "XForce",
+                  "type": "number",
+                  "value": 500
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "TimeLimitInSeconds",
+              "type": "number",
+              "value": 60
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "type": "structure",
+          "children": [
+            {
+              "folded": true,
+              "name": "Difficulty",
+              "type": "string",
+              "value": "Hard"
+            },
+            {
+              "folded": true,
+              "name": "IsBeat",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "folded": true,
+              "name": "LastStar",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "folded": true,
+              "name": "Stage",
+              "type": "number",
+              "value": 1
+            },
+            {
+              "folded": true,
+              "name": "Star",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "1",
+                  "type": "string",
+                  "value": "15"
+                },
+                {
+                  "folded": true,
+                  "name": "2",
+                  "type": "string",
+                  "value": "35"
+                },
+                {
+                  "folded": true,
+                  "name": "3",
+                  "type": "string",
+                  "value": "55"
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "Target",
+              "type": "structure",
+              "children": [
+                {
+                  "folded": true,
+                  "name": "HitScore",
+                  "type": "number",
+                  "value": 5
+                },
+                {
+                  "folded": true,
+                  "name": "MissScore",
+                  "type": "number",
+                  "value": -20
+                },
+                {
+                  "name": "SpawnSpeedPerSecond",
+                  "type": "number",
+                  "value": 1
+                },
+                {
+                  "name": "XForce",
+                  "type": "number",
+                  "value": 500
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "TargetZonk",
+              "type": "structure",
+              "children": [
+                {
+                  "folded": true,
+                  "name": "HitScore",
+                  "type": "number",
+                  "value": -10
+                },
+                {
+                  "folded": true,
+                  "name": "MissScore",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "name": "SpawnSpeedPerSecond",
+                  "type": "number",
+                  "value": 1
+                },
+                {
+                  "name": "XForce",
+                  "type": "number",
+                  "value": 500
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "TimeLimitInSeconds",
+              "type": "number",
+              "value": 60
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "type": "structure",
+          "children": [
+            {
+              "folded": true,
+              "name": "Difficulty",
+              "type": "string",
+              "value": "Hard"
+            },
+            {
+              "folded": true,
+              "name": "IsBeat",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "folded": true,
+              "name": "LastStar",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "folded": true,
+              "name": "Stage",
+              "type": "number",
+              "value": 2
+            },
+            {
+              "folded": true,
+              "name": "Star",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "1",
+                  "type": "string",
+                  "value": "15"
+                },
+                {
+                  "folded": true,
+                  "name": "2",
+                  "type": "string",
+                  "value": "35"
+                },
+                {
+                  "folded": true,
+                  "name": "3",
+                  "type": "string",
+                  "value": "55"
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "Target",
+              "type": "structure",
+              "children": [
+                {
+                  "folded": true,
+                  "name": "HitScore",
+                  "type": "number",
+                  "value": 5
+                },
+                {
+                  "folded": true,
+                  "name": "MissScore",
+                  "type": "number",
+                  "value": -20
+                },
+                {
+                  "name": "SpawnSpeedPerSecond",
+                  "type": "number",
+                  "value": 1
+                },
+                {
+                  "name": "XForce",
+                  "type": "number",
+                  "value": 500
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "TargetZonk",
+              "type": "structure",
+              "children": [
+                {
+                  "folded": true,
+                  "name": "HitScore",
+                  "type": "number",
+                  "value": -10
+                },
+                {
+                  "folded": true,
+                  "name": "MissScore",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "name": "SpawnSpeedPerSecond",
+                  "type": "number",
+                  "value": 1
+                },
+                {
+                  "name": "XForce",
+                  "type": "number",
+                  "value": 500
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "TimeLimitInSeconds",
+              "type": "number",
+              "value": 60
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "type": "structure",
+          "children": [
+            {
+              "folded": true,
+              "name": "Difficulty",
+              "type": "string",
+              "value": "Hard"
+            },
+            {
+              "folded": true,
+              "name": "IsBeat",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "folded": true,
+              "name": "LastStar",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "folded": true,
+              "name": "Stage",
+              "type": "number",
+              "value": 3
+            },
+            {
+              "folded": true,
+              "name": "Star",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "1",
+                  "type": "string",
+                  "value": "15"
+                },
+                {
+                  "folded": true,
+                  "name": "2",
+                  "type": "string",
+                  "value": "35"
+                },
+                {
+                  "folded": true,
+                  "name": "3",
+                  "type": "string",
+                  "value": "55"
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "Target",
+              "type": "structure",
+              "children": [
+                {
+                  "folded": true,
+                  "name": "HitScore",
+                  "type": "number",
+                  "value": 5
+                },
+                {
+                  "folded": true,
+                  "name": "MissScore",
+                  "type": "number",
+                  "value": -20
+                },
+                {
+                  "name": "SpawnSpeedPerSecond",
+                  "type": "number",
+                  "value": 1
+                },
+                {
+                  "name": "XForce",
+                  "type": "number",
+                  "value": 500
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "TargetZonk",
+              "type": "structure",
+              "children": [
+                {
+                  "folded": true,
+                  "name": "HitScore",
+                  "type": "number",
+                  "value": -10
+                },
+                {
+                  "folded": true,
+                  "name": "MissScore",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "name": "SpawnSpeedPerSecond",
+                  "type": "number",
+                  "value": 1
+                },
+                {
+                  "name": "XForce",
+                  "type": "number",
+                  "value": 500
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "TimeLimitInSeconds",
+              "type": "number",
+              "value": 60
+            }
+          ]
         }
       ]
     },
     {
+      "folded": true,
+      "name": "MusicPlaying",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "folded": true,
       "name": "StageStarFileName",
       "type": "structure",
       "children": [
