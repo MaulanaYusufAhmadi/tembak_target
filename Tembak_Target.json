@@ -863,6 +863,13 @@
         "name": "asset\\play\\time_up.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "file": "asset/Archivo_Black/ArchivoBlack-Regular.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "asset\\Archivo_Black\\ArchivoBlack-Regular.ttf",
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -915,6 +922,24 @@
     }
   ],
   "variables": [
+    {
+      "name": "Settings",
+      "type": "structure",
+      "children": [
+        {
+          "folded": true,
+          "name": "Music",
+          "type": "number",
+          "value": 50
+        },
+        {
+          "folded": true,
+          "name": "Sound",
+          "type": "number",
+          "value": 50
+        }
+      ]
+    },
     {
       "folded": true,
       "name": "HittedTargetXPos",

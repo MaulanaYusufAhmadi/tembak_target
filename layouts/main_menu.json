@@ -18,11 +18,17 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.2052371856464446,
+    "zoomFactor": 0.19854227461165808,
     "windowMask": false
   },
   "objectsGroups": [],
-  "variables": [],
+  "variables": [
+    {
+      "name": "TempSettings",
+      "type": "string",
+      "value": ""
+    }
+  ],
   "instances": [
     {
       "angle": 0,
@@ -115,7 +121,7 @@
       "height": 28,
       "keepRatio": true,
       "layer": "",
-      "name": "SquareWhiteSlider",
+      "name": "Slider_sound",
       "persistentUuid": "802d7a94-2b31-4b53-a7c4-ace9f8af4b99",
       "width": 352,
       "x": 2713,
@@ -132,7 +138,7 @@
       "height": 28,
       "keepRatio": true,
       "layer": "",
-      "name": "SquareWhiteSlider2",
+      "name": "Slider_music",
       "persistentUuid": "9b786496-6c74-4fd4-85cf-5d19fb1565b9",
       "width": 352,
       "x": 2726,
@@ -443,7 +449,7 @@
     },
     {
       "assetStoreId": "bfeeb465a4a164b560a2215e3ff9e78e66123af43cbf7ef1f22d56fca4271c80",
-      "name": "SquareWhiteSlider",
+      "name": "Slider_sound",
       "type": "PanelSpriteSlider::PanelSpriteSlider",
       "variables": [],
       "effects": [],
@@ -525,7 +531,7 @@
     },
     {
       "assetStoreId": "bfeeb465a4a164b560a2215e3ff9e78e66123af43cbf7ef1f22d56fca4271c80",
-      "name": "SquareWhiteSlider2",
+      "name": "Slider_music",
       "type": "PanelSpriteSlider::PanelSpriteSlider",
       "variables": [],
       "effects": [],
@@ -1099,13 +1105,13 @@
         "objectName": "sound"
       },
       {
-        "objectName": "SquareWhiteSlider"
+        "objectName": "Slider_sound"
       },
       {
         "objectName": "music"
       },
       {
-        "objectName": "SquareWhiteSlider2"
+        "objectName": "Slider_music"
       },
       {
         "objectName": "marker"
@@ -1193,7 +1199,49 @@
             "asset\\audio\\bgm\\Run the brave .mp3",
             "0",
             "yes",
-            "50",
+            "GlobalVariable(Settings.Music)",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ReadStringFromStorage"
+          },
+          "parameters": [
+            "\"Settings\"",
+            "\"Settings\"",
+            "",
+            "TempSettings"
+          ]
+        },
+        {
+          "type": {
+            "value": "JSONToVariableStructure2"
+          },
+          "parameters": [
+            "ExtendedVariables::GlobalVariableString(TempSettings)",
+            "Settings"
+          ]
+        },
+        {
+          "type": {
+            "value": "PanelSpriteSlider::PanelSpriteSlider::SetValue"
+          },
+          "parameters": [
+            "Slider_sound",
+            "=",
+            "ExtendedVariables::GlobalVariable(Settings.Sound)",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "PanelSpriteSlider::PanelSpriteSlider::SetValue"
+          },
+          "parameters": [
+            "Slider_music",
+            "=",
+            "ExtendedVariables::GlobalVariable(Settings.Music)",
             ""
           ]
         }
@@ -1235,7 +1283,7 @@
             "",
             "asset\\audio\\sfx\\button.mp3",
             "",
-            "",
+            "GlobalVariable(Settings.Sound)",
             ""
           ]
         }
@@ -1277,8 +1325,18 @@
             "",
             "asset\\audio\\sfx\\button.mp3",
             "",
-            "",
+            "GlobalVariable(Settings.Sound)",
             ""
+          ]
+        },
+        {
+          "type": {
+            "value": "EcrireFichierTxt"
+          },
+          "parameters": [
+            "\"Settings\"",
+            "\"Settings\"",
+            "GlobalVarToJSON(Settings)"
           ]
         }
       ]
@@ -1339,8 +1397,60 @@
             "",
             "asset\\audio\\sfx\\button.mp3",
             "",
-            "",
+            "GlobalVariable(Settings.Sound)",
             ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "PanelSpriteSlider::PanelSpriteSlider::IsBeingDragged"
+          },
+          "parameters": [
+            "Slider_sound",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "Settings.Sound",
+            "=",
+            "Slider_sound.Value()"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "PanelSpriteSlider::PanelSpriteSlider::IsBeingDragged"
+          },
+          "parameters": [
+            "Slider_music",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "Settings.Music",
+            "=",
+            "Slider_music.Value()"
           ]
         }
       ]
@@ -1349,6 +1459,49 @@
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [],
       "actions": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "SceneJustResumed"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ReadStringFromStorage"
+          },
+          "parameters": [
+            "\"Settings\"",
+            "\"Settings\"",
+            "",
+            "TempSettings"
+          ]
+        },
+        {
+          "type": {
+            "value": "JSONToVariableStructure2"
+          },
+          "parameters": [
+            "ExtendedVariables::GlobalVariableString(TempSettings)",
+            "Settings"
+          ]
+        }
+      ],
+      "variables": [
+        {
+          "folded": true,
+          "name": "Variable",
+          "type": "number",
+          "value": 0
+        }
+      ]
     }
   ],
   "layers": [

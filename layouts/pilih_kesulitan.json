@@ -22,7 +22,14 @@
     "windowMask": false
   },
   "objectsGroups": [],
-  "variables": [],
+  "variables": [
+    {
+      "folded": true,
+      "name": "TempSettings",
+      "type": "string",
+      "value": "0"
+    }
+  ],
   "instances": [
     {
       "angle": 0,
@@ -2226,7 +2233,7 @@
             "asset\\audio\\bgm\\Run the brave .mp3",
             "0",
             "yes",
-            "50",
+            "GlobalVariable(Settings.Music)",
             ""
           ]
         }
@@ -2264,7 +2271,7 @@
             "",
             "asset\\audio\\sfx\\button.mp3",
             "",
-            "",
+            "GlobalVariable(Settings.Sound)",
             ""
           ]
         },
@@ -2316,7 +2323,7 @@
             "",
             "asset\\audio\\sfx\\button.mp3",
             "",
-            "",
+            "GlobalVariable(Settings.Sound)",
             ""
           ]
         }
@@ -2358,7 +2365,7 @@
             "",
             "asset\\audio\\sfx\\button.mp3",
             "",
-            "",
+            "GlobalVariable(Settings.Sound)",
             ""
           ]
         }
@@ -2400,7 +2407,7 @@
             "",
             "asset\\audio\\sfx\\button.mp3",
             "",
-            "",
+            "GlobalVariable(Settings.Sound)",
             ""
           ]
         }
@@ -2442,7 +2449,7 @@
             "",
             "asset\\audio\\sfx\\button.mp3",
             "",
-            "",
+            "GlobalVariable(Settings.Sound)",
             ""
           ]
         }
@@ -2585,11 +2592,6 @@
           ]
         }
       ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": []
     }
   ],
   "layers": [

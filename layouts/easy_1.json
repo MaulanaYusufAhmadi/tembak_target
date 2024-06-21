@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.2448838363372569,
+    "zoomFactor": 0.2890516203134943,
     "windowMask": false
   },
   "objectsGroups": [
@@ -243,8 +243,8 @@
       "name": "tirai",
       "persistentUuid": "f4e7a170-b994-4e4a-8765-a4692c1d0822",
       "width": 0,
-      "x": -32,
-      "y": 0,
+      "x": -31,
+      "y": -6,
       "zOrder": 18,
       "numberProperties": [],
       "stringProperties": [],
@@ -356,8 +356,8 @@
       "name": "NextLevel",
       "persistentUuid": "874c1daa-8227-473a-b8ff-e5686a4e8829",
       "width": 0,
-      "x": 1111,
-      "y": 646,
+      "x": 1119,
+      "y": 662,
       "zOrder": 24,
       "numberProperties": [],
       "stringProperties": [],
@@ -388,8 +388,8 @@
       "name": "Text2",
       "persistentUuid": "6b0de24a-6344-4a91-95bf-bc8633e99d2b",
       "width": 0,
-      "x": 1249,
-      "y": 32,
+      "x": 1257,
+      "y": 10,
       "zOrder": 27,
       "numberProperties": [],
       "stringProperties": [],
@@ -404,8 +404,8 @@
       "name": "Text3",
       "persistentUuid": "c403ec1b-99b2-47c0-85bf-61c75c904eb5",
       "width": 0,
-      "x": 1251,
-      "y": 136,
+      "x": 1257,
+      "y": 74,
       "zOrder": 28,
       "numberProperties": [],
       "stringProperties": [],
@@ -636,13 +636,13 @@
       "effects": [],
       "behaviors": [],
       "string": "0",
-      "font": "",
+      "font": "asset\\Germania_One\\GermaniaOne-Regular.ttf",
       "textAlignment": "left",
       "characterSize": 50,
       "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
+        "b": 255,
+        "g": 255,
+        "r": 255
       },
       "content": {
         "bold": false,
@@ -659,10 +659,10 @@
         "smoothed": true,
         "underlined": false,
         "text": "0",
-        "font": "",
+        "font": "asset\\Germania_One\\GermaniaOne-Regular.ttf",
         "textAlignment": "left",
         "characterSize": 50,
-        "color": "0;0;0"
+        "color": "255;255;255"
       }
     },
     {
@@ -677,13 +677,13 @@
       "effects": [],
       "behaviors": [],
       "string": "Text",
-      "font": "",
+      "font": "asset\\Germania_One\\GermaniaOne-Regular.ttf",
       "textAlignment": "left",
       "characterSize": 50,
       "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
+        "b": 255,
+        "g": 255,
+        "r": 255
       },
       "content": {
         "bold": false,
@@ -700,10 +700,10 @@
         "smoothed": true,
         "underlined": false,
         "text": "Text",
-        "font": "",
+        "font": "asset\\Germania_One\\GermaniaOne-Regular.ttf",
         "textAlignment": "left",
         "characterSize": 50,
-        "color": "0;0;0"
+        "color": "255;255;255"
       }
     },
     {
@@ -991,13 +991,13 @@
       "effects": [],
       "behaviors": [],
       "string": "00\n",
-      "font": "",
+      "font": "asset\\Archivo_Black\\ArchivoBlack-Regular.ttf",
       "textAlignment": "left",
       "characterSize": 100,
       "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
+        "b": 255,
+        "g": 255,
+        "r": 255
       },
       "content": {
         "bold": false,
@@ -1014,10 +1014,10 @@
         "smoothed": true,
         "underlined": false,
         "text": "00\n",
-        "font": "",
+        "font": "asset\\Archivo_Black\\ArchivoBlack-Regular.ttf",
         "textAlignment": "left",
         "characterSize": 100,
-        "color": "0;0;0"
+        "color": "255;255;255"
       }
     },
     {
@@ -2115,13 +2115,13 @@
           "smoothed": true,
           "underlined": false,
           "string": "Retry",
-          "font": "",
+          "font": "asset\\Archivo_Black\\ArchivoBlack-Regular.ttf",
           "textAlignment": "center",
-          "characterSize": 60,
+          "characterSize": 40,
           "color": {
-            "b": 99,
-            "g": 69,
-            "r": 28
+            "b": 27,
+            "g": 2,
+            "r": 208
           },
           "content": {
             "bold": false,
@@ -2138,10 +2138,10 @@
             "smoothed": true,
             "underlined": false,
             "text": "Retry",
-            "font": "",
+            "font": "asset\\Archivo_Black\\ArchivoBlack-Regular.ttf",
             "textAlignment": "center",
-            "characterSize": 60,
-            "color": "28;69;99"
+            "characterSize": 40,
+            "color": "208;2;27"
           }
         },
         "Pressed": {
@@ -2258,13 +2258,13 @@
           "smoothed": true,
           "underlined": false,
           "string": "Next Level",
-          "font": "asset\\Germania_One\\GermaniaOne-Regular.ttf",
+          "font": "asset\\Archivo_Black\\ArchivoBlack-Regular.ttf",
           "textAlignment": "center",
-          "characterSize": 60,
+          "characterSize": 30,
           "color": {
-            "b": 27,
-            "g": 2,
-            "r": 208
+            "b": 5,
+            "g": 117,
+            "r": 65
           },
           "content": {
             "bold": false,
@@ -2281,10 +2281,10 @@
             "smoothed": true,
             "underlined": false,
             "text": "Next Level",
-            "font": "asset\\Germania_One\\GermaniaOne-Regular.ttf",
+            "font": "asset\\Archivo_Black\\ArchivoBlack-Regular.ttf",
             "textAlignment": "center",
-            "characterSize": 60,
-            "color": "208;2;27"
+            "characterSize": 30,
+            "color": "65;117;5"
           }
         },
         "Pressed": {
@@ -2311,13 +2311,13 @@
       "effects": [],
       "behaviors": [],
       "string": "Text",
-      "font": "",
+      "font": "asset\\Germania_One\\GermaniaOne-Regular.ttf",
       "textAlignment": "left",
       "characterSize": 50,
       "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
+        "b": 255,
+        "g": 255,
+        "r": 255
       },
       "content": {
         "bold": false,
@@ -2334,10 +2334,10 @@
         "smoothed": true,
         "underlined": false,
         "text": "Text",
-        "font": "",
+        "font": "asset\\Germania_One\\GermaniaOne-Regular.ttf",
         "textAlignment": "left",
         "characterSize": 50,
-        "color": "0;0;0"
+        "color": "255;255;255"
       }
     },
     {
@@ -2879,6 +2879,89 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "90d94b6e3a23c34948e59eaaef4679740f8ab588696d59b21e0c0c2ef106b94d",
+      "name": "MainMenuButton",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 16,
+        "RightPadding": 16,
+        "PressedLabelOffsetY": 10,
+        "BottomPadding": 32,
+        "TopPadding": 16,
+        "HoveredFadeOutDuration": 0.25
+      },
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 32,
+          "height": 106,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Blue Button_Hovered.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 256
+        },
+        "Idle": {
+          "bottomMargin": 32,
+          "height": 106,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Blue Button_Idle.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 256
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "Main Menu",
+          "font": "asset\\Archivo_Black\\ArchivoBlack-Regular.ttf",
+          "textAlignment": "center",
+          "characterSize": 30,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Main Menu",
+            "font": "asset\\Archivo_Black\\ArchivoBlack-Regular.ttf",
+            "textAlignment": "center",
+            "characterSize": 30,
+            "color": "255;255;255"
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 16,
+          "height": 106,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Blue Button_Pressed.png",
+          "tiled": true,
+          "topMargin": 32,
+          "width": 256
+        }
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -2976,6 +3059,9 @@
       },
       {
         "objectName": "RetryButton"
+      },
+      {
+        "objectName": "MainMenuButton"
       },
       {
         "objectName": "NextLevelButton"
@@ -3207,7 +3293,7 @@
             "",
             "asset\\audio\\sfx\\countdown.mp3",
             "",
-            "",
+            "GlobalVariable(Settings.Sound)",
             ""
           ]
         },
@@ -3248,7 +3334,7 @@
             "",
             "asset\\audio\\sfx\\countdown.mp3",
             "",
-            "",
+            "GlobalVariable(Setting.Sound)",
             ""
           ]
         },
@@ -3289,7 +3375,7 @@
             "",
             "asset\\audio\\sfx\\countdown.mp3",
             "",
-            "",
+            "GlobalVariable(Settings.Sound)",
             "2"
           ]
         },
@@ -3466,7 +3552,7 @@
             "",
             "asset\\audio\\sfx\\gunshot.MP3",
             "",
-            "",
+            "GlobalVariable(Settings.Sound)",
             ""
           ]
         }
@@ -3558,7 +3644,7 @@
                         "",
                         "asset\\audio\\sfx\\minus point.MP3",
                         "",
-                        "",
+                        "GlobalVariable(Settings.Sound)",
                         ""
                       ]
                     }
@@ -3597,7 +3683,7 @@
                         "",
                         "asset\\audio\\sfx\\get point.MP3",
                         "",
-                        "",
+                        "GlobalVariable(Settings.Sound)",
                         ""
                       ]
                     }
@@ -3794,7 +3880,7 @@
             "asset\\audio\\bgm\\Space intruder.mp3",
             "1",
             "yes",
-            "50",
+            "GlobalVariable(Settings.Music)",
             ""
           ]
         }
@@ -3890,7 +3976,7 @@
             "",
             "asset\\audio\\sfx\\game over.mp3",
             "",
-            "",
+            "GlobalVariable(Settings.Sound)",
             ""
           ]
         },
@@ -3912,7 +3998,7 @@
           },
           "parameters": [
             "",
-            "MainMenu",
+            "MainMenuButton",
             "500",
             "725",
             "\"UI\""
@@ -4048,7 +4134,7 @@
                 "",
                 "asset\\audio\\sfx\\game over.mp3",
                 "",
-                "",
+                "GlobalVariable(Settings.Sound)",
                 ""
               ]
             }
@@ -4106,7 +4192,7 @@
                 "",
                 "asset\\audio\\sfx\\stage completion.wav",
                 "",
-                "",
+                "GlobalVariable(Settings.Sound)",
                 ""
               ]
             }
@@ -4158,7 +4244,7 @@
                 "",
                 "asset\\audio\\sfx\\stage completion.wav",
                 "",
-                "",
+                "GlobalVariable(Settings.Sound)",
                 ""
               ]
             }
@@ -4210,7 +4296,7 @@
                 "",
                 "asset\\audio\\sfx\\stage completion.wav",
                 "",
-                "",
+                "GlobalVariable(Settings.Sound)",
                 ""
               ]
             }
@@ -4262,7 +4348,7 @@
                 "",
                 "asset\\audio\\sfx\\stage completion.wav",
                 "",
-                "",
+                "GlobalVariable(Settings.Sound)",
                 ""
               ]
             }
@@ -4358,6 +4444,32 @@
       ]
     },
     {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+          },
+          "parameters": [
+            "MainMenuButton",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"Main_menu\"",
+            "yes"
+          ]
+        }
+      ]
+    },
+    {
       "colorB": 228,
       "colorG": 176,
       "colorR": 74,
@@ -4412,11 +4524,6 @@
           ]
         }
       ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": []
     }
   ],
   "layers": [
