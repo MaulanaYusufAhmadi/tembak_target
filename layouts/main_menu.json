@@ -1127,29 +1127,8 @@
   "events": [
     {
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "BooleanVariable"
-          },
-          "parameters": [
-            "MusicPlaying",
-            "True",
-            "="
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "RePlayMusicCanal"
-          },
-          "parameters": [
-            "",
-            "0"
-          ]
-        }
-      ]
+      "conditions": [],
+      "actions": []
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
@@ -1178,29 +1157,6 @@
           },
           "parameters": [
             "marker_setting"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetBooleanVariable"
-          },
-          "parameters": [
-            "MusicPlaying",
-            "True",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "PlayMusicCanal"
-          },
-          "parameters": [
-            "",
-            "asset\\audio\\bgm\\Run the brave .mp3",
-            "0",
-            "yes",
-            "GlobalVariable(Settings.Music)",
-            ""
           ]
         },
         {
@@ -1243,6 +1199,74 @@
             "=",
             "ExtendedVariables::GlobalVariable(Settings.Music)",
             ""
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "MusicPlaying",
+                "False",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlayMusicCanal"
+              },
+              "parameters": [
+                "",
+                "asset\\audio\\bgm\\Run the brave .mp3",
+                "0",
+                "yes",
+                "GlobalVariable(Settings.Music)",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "MusicPlaying",
+                "True",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "MusicPlaying",
+                "True",
+                "="
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "RePlayMusicCanal"
+              },
+              "parameters": [
+                "",
+                "0"
+              ]
+            }
           ]
         }
       ]
@@ -1426,6 +1450,44 @@
             "=",
             "Slider_sound.Value()"
           ]
+        },
+        {
+          "type": {
+            "value": "ModVolumeSoundCanal"
+          },
+          "parameters": [
+            "",
+            "0",
+            "=",
+            "Slider_sound.Value()"
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "asset\\audio\\sfx\\gunshot.MP3",
+                "",
+                "GlobalVariable(Settings.Sound)",
+                ""
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1449,6 +1511,17 @@
           },
           "parameters": [
             "Settings.Music",
+            "=",
+            "Slider_music.Value()"
+          ]
+        },
+        {
+          "type": {
+            "value": "ModVolumeMusicCanal"
+          },
+          "parameters": [
+            "",
+            "0",
             "=",
             "Slider_music.Value()"
           ]
