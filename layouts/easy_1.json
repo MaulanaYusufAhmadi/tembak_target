@@ -3970,18 +3970,6 @@
         },
         {
           "type": {
-            "value": "PlaySound"
-          },
-          "parameters": [
-            "",
-            "asset\\audio\\sfx\\game over.mp3",
-            "",
-            "GlobalVariable(Settings.Sound)",
-            ""
-          ]
-        },
-        {
-          "type": {
             "value": "Create"
           },
           "parameters": [
@@ -4366,6 +4354,53 @@
                 "StageSetting[Variable(ActiveStageNumber)].LastStar",
                 "=",
                 "Variable(Star)"
+              ]
+            },
+            {
+              "type": {
+                "value": "EcrireFichierExp"
+              },
+              "parameters": [
+                "\"storage\"",
+                "\"stage\"",
+                "Variable(Star)"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Star",
+                ">",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "StageSetting[Variable(ActiveStageNumber)].IsBeat",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "EcrireFichierExp"
+              },
+              "parameters": [
+                "\"storage\"",
+                "\"stage\"",
+                "Variable(IsBeat)"
               ]
             }
           ]
