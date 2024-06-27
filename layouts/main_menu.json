@@ -1186,7 +1186,7 @@
           "parameters": [
             "Slider_sound",
             "=",
-            "ExtendedVariables::GlobalVariable(Settings.Sound)",
+            "GlobalVariable(Settings.Sound)",
             ""
           ]
         },
@@ -1197,7 +1197,7 @@
           "parameters": [
             "Slider_music",
             "=",
-            "ExtendedVariables::GlobalVariable(Settings.Music)",
+            "GlobalVariable(Settings.Music)",
             ""
           ]
         }
