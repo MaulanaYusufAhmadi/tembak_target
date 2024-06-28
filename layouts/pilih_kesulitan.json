@@ -2926,16 +2926,6 @@
             "ButtonFSM",
             ""
           ]
-        },
-        {
-          "type": {
-            "value": "BooleanVariable"
-          },
-          "parameters": [
-            "StageSetting[2].IsBeat",
-            "True",
-            ""
-          ]
         }
       ],
       "actions": [
@@ -3190,7 +3180,7 @@
             "value": "ButtonStates::ButtonFSM::IsClicked"
           },
           "parameters": [
-            "stage1_hard",
+            "stage3_hard",
             "ButtonFSM",
             ""
           ]
