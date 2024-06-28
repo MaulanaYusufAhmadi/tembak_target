@@ -985,6 +985,7 @@
               "value": 1
             },
             {
+              "folded": true,
               "name": "Star",
               "type": "structure",
               "children": [
@@ -1008,6 +1009,7 @@
               ]
             },
             {
+              "folded": true,
               "name": "Target",
               "type": "structure",
               "children": [
@@ -1036,6 +1038,7 @@
               ]
             },
             {
+              "folded": true,
               "name": "TargetZonk",
               "type": "structure",
               "children": [
@@ -1067,7 +1070,7 @@
               "folded": true,
               "name": "TimeLimitInSeconds",
               "type": "number",
-              "value": 60
+              "value": 40
             }
           ]
         },
@@ -1182,12 +1185,11 @@
               "folded": true,
               "name": "TimeLimitInSeconds",
               "type": "number",
-              "value": 60
+              "value": 40
             }
           ]
         },
         {
-          "folded": true,
           "type": "structure",
           "children": [
             {
@@ -1297,7 +1299,7 @@
               "folded": true,
               "name": "TimeLimitInSeconds",
               "type": "number",
-              "value": 60
+              "value": 40
             }
           ]
         },
@@ -1412,11 +1414,12 @@
               "folded": true,
               "name": "TimeLimitInSeconds",
               "type": "number",
-              "value": 40
+              "value": 30
             }
           ]
         },
         {
+          "folded": true,
           "type": "structure",
           "children": [
             {
@@ -1444,6 +1447,7 @@
               "value": 2
             },
             {
+              "folded": true,
               "name": "Star",
               "type": "structure",
               "children": [
@@ -1467,6 +1471,7 @@
               ]
             },
             {
+              "folded": true,
               "name": "Target",
               "type": "structure",
               "children": [
@@ -1495,6 +1500,7 @@
               ]
             },
             {
+              "folded": true,
               "name": "TargetZonk",
               "type": "structure",
               "children": [
@@ -1526,11 +1532,12 @@
               "folded": true,
               "name": "TimeLimitInSeconds",
               "type": "number",
-              "value": 40
+              "value": 30
             }
           ]
         },
         {
+          "folded": true,
           "type": "structure",
           "children": [
             {
@@ -1558,6 +1565,7 @@
               "value": 3
             },
             {
+              "folded": true,
               "name": "Star",
               "type": "structure",
               "children": [
@@ -1581,6 +1589,7 @@
               ]
             },
             {
+              "folded": true,
               "name": "Target",
               "type": "structure",
               "children": [
@@ -1609,6 +1618,7 @@
               ]
             },
             {
+              "folded": true,
               "name": "TargetZonk",
               "type": "structure",
               "children": [
@@ -1640,7 +1650,7 @@
               "folded": true,
               "name": "TimeLimitInSeconds",
               "type": "number",
-              "value": 40
+              "value": 30
             }
           ]
         }

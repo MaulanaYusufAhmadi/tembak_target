@@ -2103,29 +2103,6 @@
   },
   "events": [
     {
-      "disabled": true,
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": [
-        {
-          "type": {
-            "value": "LoadFile"
-          },
-          "parameters": [
-            "\"storage\""
-          ]
-        },
-        {
-          "type": {
-            "value": "UnloadFile"
-          },
-          "parameters": [
-            "\"storage\""
-          ]
-        }
-      ]
-    },
-    {
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
