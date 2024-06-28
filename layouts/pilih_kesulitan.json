@@ -9,7 +9,7 @@
   "title": "",
   "v": 209,
   "uiSettings": {
-    "grid": true,
+    "grid": false,
     "gridType": "rectangular",
     "gridWidth": 32,
     "gridHeight": 32,
@@ -17,8 +17,8 @@
     "gridOffsetY": 0,
     "gridColor": 10401023,
     "gridAlpha": 0.8,
-    "snap": true,
-    "zoomFactor": 0.3437520241612335,
+    "snap": false,
+    "zoomFactor": 0.2817259932079577,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -72,8 +72,8 @@
       "name": "BTN_hard",
       "persistentUuid": "89599b6b-ffcd-46a5-acfc-f7ea23021e40",
       "width": 487.2,
-      "x": 761,
-      "y": 592,
+      "x": 1013,
+      "y": 629,
       "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
@@ -88,8 +88,8 @@
       "name": "BTN_Normal",
       "persistentUuid": "b9bf6c9a-a167-41a1-a490-af4e4b73ce12",
       "width": 487.2,
-      "x": 761,
-      "y": 432,
+      "x": 1008,
+      "y": 477,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
@@ -137,8 +137,8 @@
       "name": "btn_back",
       "persistentUuid": "adc08d1d-8965-42ad-a9e2-dda791675720",
       "width": 421,
-      "x": 795,
-      "y": 864,
+      "x": 724,
+      "y": 943,
       "zOrder": 7,
       "numberProperties": [],
       "stringProperties": [],
@@ -305,6 +305,38 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "karakter",
+      "persistentUuid": "616bf013-61c7-4cdc-997d-30c7f7f16c9c",
+      "width": 0,
+      "x": 474,
+      "y": 416,
+      "zOrder": 18,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "buble_text",
+      "persistentUuid": "f1fcc4ed-8a46-43b4-875d-8a34a7b74bbe",
+      "width": 0,
+      "x": 419,
+      "y": 340,
+      "zOrder": 19,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -328,7 +360,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "asset\\pilih_kesulitan\\bg_kesulitan.png",
+                  "image": "asset\\pilih_kesulitan\\bgg_kesulitan.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -2016,6 +2048,126 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "karakter",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "asset\\pilih_kesulitan\\karakter2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 25,
+                        "y": 64
+                      },
+                      {
+                        "x": 373,
+                        "y": 64
+                      },
+                      {
+                        "x": 373,
+                        "y": 459
+                      },
+                      {
+                        "x": 25,
+                        "y": 459
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "buble_text",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "asset\\pilih_kesulitan\\buble_text.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 468,
+                        "y": 0
+                      },
+                      {
+                        "x": 468,
+                        "y": 189
+                      },
+                      {
+                        "x": 0,
+                        "y": 189
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -2032,6 +2184,12 @@
       },
       {
         "objectName": "BTN_hard"
+      },
+      {
+        "objectName": "karakter"
+      },
+      {
+        "objectName": "buble_text"
       },
       {
         "objectName": "BG_HARD"
