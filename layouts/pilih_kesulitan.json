@@ -2434,6 +2434,35 @@
           "parameters": [
             "StageSetting[0].LastStar",
             "=",
+            "1"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Create"
+          },
+          "parameters": [
+            "",
+            "stage1_star1",
+            "-1400",
+            "400",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "StageSetting[0].LastStar",
+            "=",
             "2"
           ]
         }
@@ -2475,35 +2504,6 @@
           "parameters": [
             "",
             "stage1_star3",
-            "-1400",
-            "400",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "NumberVariable"
-          },
-          "parameters": [
-            "StageSetting[0].LastStar",
-            "=",
-            "1"
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "Create"
-          },
-          "parameters": [
-            "",
-            "stage1_star1",
             "-1400",
             "400",
             ""

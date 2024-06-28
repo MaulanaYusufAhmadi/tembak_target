@@ -950,10 +950,9 @@
       "folded": true,
       "name": "RoundStart",
       "type": "boolean",
-      "value": true
+      "value": false
     },
     {
-      "folded": true,
       "name": "StageSetting",
       "type": "array",
       "children": [
@@ -986,31 +985,29 @@
               "value": 1
             },
             {
-              "folded": true,
               "name": "Star",
               "type": "structure",
               "children": [
                 {
                   "name": "1",
                   "type": "string",
-                  "value": "10"
+                  "value": "50"
                 },
                 {
                   "folded": true,
                   "name": "2",
                   "type": "string",
-                  "value": "30"
+                  "value": "70"
                 },
                 {
                   "folded": true,
                   "name": "3",
                   "type": "string",
-                  "value": "50"
+                  "value": "100"
                 }
               ]
             },
             {
-              "folded": true,
               "name": "Target",
               "type": "structure",
               "children": [
@@ -1018,18 +1015,18 @@
                   "folded": true,
                   "name": "HitScore",
                   "type": "number",
-                  "value": 3
+                  "value": 5
                 },
                 {
                   "folded": true,
                   "name": "MissScore",
                   "type": "number",
-                  "value": 0
+                  "value": -3
                 },
                 {
                   "name": "SpawnSpeedPerSecond",
                   "type": "number",
-                  "value": 0.5
+                  "value": 0.7
                 },
                 {
                   "name": "XForce",
@@ -1039,7 +1036,6 @@
               ]
             },
             {
-              "folded": true,
               "name": "TargetZonk",
               "type": "structure",
               "children": [
@@ -1047,7 +1043,7 @@
                   "folded": true,
                   "name": "HitScore",
                   "type": "number",
-                  "value": -5
+                  "value": -10
                 },
                 {
                   "folded": true,
@@ -1071,7 +1067,7 @@
               "folded": true,
               "name": "TimeLimitInSeconds",
               "type": "number",
-              "value": 10
+              "value": 60
             }
           ]
         },
@@ -1104,31 +1100,29 @@
               "value": 2
             },
             {
-              "folded": true,
               "name": "Star",
               "type": "structure",
               "children": [
                 {
                   "name": "1",
                   "type": "string",
-                  "value": "15"
+                  "value": "70"
                 },
                 {
                   "folded": true,
                   "name": "2",
                   "type": "string",
-                  "value": "35"
+                  "value": "100"
                 },
                 {
                   "folded": true,
                   "name": "3",
                   "type": "string",
-                  "value": "55"
+                  "value": "120"
                 }
               ]
             },
             {
-              "folded": true,
               "name": "Target",
               "type": "structure",
               "children": [
@@ -1142,12 +1136,12 @@
                   "folded": true,
                   "name": "MissScore",
                   "type": "number",
-                  "value": -20
+                  "value": -3
                 },
                 {
                   "name": "SpawnSpeedPerSecond",
                   "type": "number",
-                  "value": 1
+                  "value": 0.7
                 },
                 {
                   "name": "XForce",
@@ -1157,7 +1151,6 @@
               ]
             },
             {
-              "folded": true,
               "name": "TargetZonk",
               "type": "structure",
               "children": [
@@ -1222,31 +1215,29 @@
               "value": 3
             },
             {
-              "folded": true,
               "name": "Star",
               "type": "structure",
               "children": [
                 {
                   "name": "1",
                   "type": "string",
-                  "value": "15"
+                  "value": "100"
                 },
                 {
                   "folded": true,
                   "name": "2",
                   "type": "string",
-                  "value": "35"
+                  "value": "120"
                 },
                 {
                   "folded": true,
                   "name": "3",
                   "type": "string",
-                  "value": "55"
+                  "value": "150"
                 }
               ]
             },
             {
-              "folded": true,
               "name": "Target",
               "type": "structure",
               "children": [
@@ -1260,12 +1251,12 @@
                   "folded": true,
                   "name": "MissScore",
                   "type": "number",
-                  "value": -20
+                  "value": -3
                 },
                 {
                   "name": "SpawnSpeedPerSecond",
                   "type": "number",
-                  "value": 1
+                  "value": 0.7
                 },
                 {
                   "name": "XForce",
@@ -1275,7 +1266,6 @@
               ]
             },
             {
-              "folded": true,
               "name": "TargetZonk",
               "type": "structure",
               "children": [
@@ -1340,31 +1330,29 @@
               "value": 1
             },
             {
-              "folded": true,
               "name": "Star",
               "type": "structure",
               "children": [
                 {
                   "name": "1",
                   "type": "string",
-                  "value": "15"
+                  "value": "50"
                 },
                 {
                   "folded": true,
                   "name": "2",
                   "type": "string",
-                  "value": "35"
+                  "value": "70"
                 },
                 {
                   "folded": true,
                   "name": "3",
                   "type": "string",
-                  "value": "55"
+                  "value": "100"
                 }
               ]
             },
             {
-              "folded": true,
               "name": "Target",
               "type": "structure",
               "children": [
@@ -1378,12 +1366,12 @@
                   "folded": true,
                   "name": "MissScore",
                   "type": "number",
-                  "value": -20
+                  "value": -3
                 },
                 {
                   "name": "SpawnSpeedPerSecond",
                   "type": "number",
-                  "value": 1
+                  "value": 0.7
                 },
                 {
                   "name": "XForce",
@@ -1393,7 +1381,6 @@
               ]
             },
             {
-              "folded": true,
               "name": "TargetZonk",
               "type": "structure",
               "children": [
@@ -1425,12 +1412,11 @@
               "folded": true,
               "name": "TimeLimitInSeconds",
               "type": "number",
-              "value": 60
+              "value": 40
             }
           ]
         },
         {
-          "folded": true,
           "type": "structure",
           "children": [
             {
@@ -1458,31 +1444,29 @@
               "value": 2
             },
             {
-              "folded": true,
               "name": "Star",
               "type": "structure",
               "children": [
                 {
                   "name": "1",
                   "type": "string",
-                  "value": "15"
+                  "value": "70"
                 },
                 {
                   "folded": true,
                   "name": "2",
                   "type": "string",
-                  "value": "35"
+                  "value": "100"
                 },
                 {
                   "folded": true,
                   "name": "3",
                   "type": "string",
-                  "value": "55"
+                  "value": "120"
                 }
               ]
             },
             {
-              "folded": true,
               "name": "Target",
               "type": "structure",
               "children": [
@@ -1496,12 +1480,12 @@
                   "folded": true,
                   "name": "MissScore",
                   "type": "number",
-                  "value": -20
+                  "value": -3
                 },
                 {
                   "name": "SpawnSpeedPerSecond",
                   "type": "number",
-                  "value": 1
+                  "value": 0.7
                 },
                 {
                   "name": "XForce",
@@ -1511,7 +1495,6 @@
               ]
             },
             {
-              "folded": true,
               "name": "TargetZonk",
               "type": "structure",
               "children": [
@@ -1543,12 +1526,11 @@
               "folded": true,
               "name": "TimeLimitInSeconds",
               "type": "number",
-              "value": 60
+              "value": 40
             }
           ]
         },
         {
-          "folded": true,
           "type": "structure",
           "children": [
             {
@@ -1576,31 +1558,29 @@
               "value": 3
             },
             {
-              "folded": true,
               "name": "Star",
               "type": "structure",
               "children": [
                 {
                   "name": "1",
                   "type": "string",
-                  "value": "15"
+                  "value": "100"
                 },
                 {
                   "folded": true,
                   "name": "2",
                   "type": "string",
-                  "value": "35"
+                  "value": "120"
                 },
                 {
                   "folded": true,
                   "name": "3",
                   "type": "string",
-                  "value": "55"
+                  "value": "150"
                 }
               ]
             },
             {
-              "folded": true,
               "name": "Target",
               "type": "structure",
               "children": [
@@ -1614,12 +1594,12 @@
                   "folded": true,
                   "name": "MissScore",
                   "type": "number",
-                  "value": -20
+                  "value": -3
                 },
                 {
                   "name": "SpawnSpeedPerSecond",
                   "type": "number",
-                  "value": 1
+                  "value": 0.7
                 },
                 {
                   "name": "XForce",
@@ -1629,7 +1609,6 @@
               ]
             },
             {
-              "folded": true,
               "name": "TargetZonk",
               "type": "structure",
               "children": [
@@ -1661,7 +1640,7 @@
               "folded": true,
               "name": "TimeLimitInSeconds",
               "type": "number",
-              "value": 60
+              "value": 40
             }
           ]
         }

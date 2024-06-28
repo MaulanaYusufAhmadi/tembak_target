@@ -3319,15 +3319,6 @@
         },
         {
           "type": {
-            "value": "Delete"
-          },
-          "parameters": [
-            "Ready",
-            ""
-          ]
-        },
-        {
-          "type": {
             "value": "PlaySound"
           },
           "parameters": [
@@ -3335,6 +3326,15 @@
             "asset\\audio\\sfx\\countdown.mp3",
             "",
             "GlobalVariable(Setting.Sound)",
+            "2"
+          ]
+        },
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "Ready",
             ""
           ]
         },
